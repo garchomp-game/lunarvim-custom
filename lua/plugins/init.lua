@@ -1,7 +1,23 @@
 local M = {}
-
-table.insert(M, require('plugins.custom.neo-tree'))
+table.insert(M, require('plugins.custom.actions-preview'))
+table.insert(M, require('plugins.custom.aerial'))
+table.insert(M, require('plugins.custom.codeium'))
+table.insert(M, require('plugins.custom.futago-vim'))
+table.insert(M, require('plugins.custom.lua-guide-ja'))
+table.insert(M, require('plugins.custom.markdown-preview'))
+table.insert(M, require('plugins.custom.mini-nvim'))
 table.insert(M, require('plugins.custom.neogit'))
-table.insert(M, require('plugins.custom.startuptime'))
+table.insert(M, require('plugins.custom.nvim-base16'))
+table.insert(M, require('plugins.custom.nvim-neo-tree'))
+table.insert(M, require('plugins.custom.nvim-notify'))
+table.insert(M, require('plugins.custom.nvim-typing-game'))
+table.insert(M, require('plugins.custom.plantuml'))
+table.insert(M, require('plugins.custom.quick-scope'))
+table.insert(M, require('plugins.custom.shakyo'))
+table.insert(M, require('plugins.custom.tabular'))
+table.insert(M, require('plugins.custom.translate'))
+table.insert(M, require('plugins.custom.vim-maketable'))
+table.insert(M, require('plugins.custom.vim-startuptime'))
+table.insert(M, require('plugins.custom.vimdoc-ja'))
 
 return M
