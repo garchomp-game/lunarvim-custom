@@ -1,5 +1,7 @@
-require('override')
-require('mappings')
-require('customOption')
+require 'user.override'
 -- プラグイン追加
-lvim.plugins = require('plugins')
+lvim.plugins = require 'user.plugins'
+require 'user.mappings'
+require 'user.option'
+require 'user.utils'
+require 'user.command'
