@@ -8,14 +8,8 @@ lvim.builtin.alpha.active = false
 -- nvim-tree無効化
 lvim.builtin.nvimtree.active = false
 lvim.format_on_save.enabled = true
+
 -- lsp
-require("lvim.lsp.manager").setup "marksman"
-
-local linters = require "lvim.lsp.null-ls.linters"
-local formatters = require "lvim.lsp.null-ls.formatters"
-linters.setup { { command = "markdownlint", filetypes = { "markdown" } } }
-formatters.setup({ { command = "stylua", filetypes = { "lua" } } })
-
 lvim.builtin.telescope.on_config_done = function()
   local builtin = require('telescope.builtin')
   vim.keymap.set('n', '<leader>ff', builtin.find_files, {})

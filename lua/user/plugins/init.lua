@@ -19,5 +19,6 @@ table.insert(M, require('user.plugins.custom.translate'))
 table.insert(M, require('user.plugins.custom.vim-maketable'))
 table.insert(M, require('user.plugins.custom.vim-startuptime'))
 table.insert(M, require('user.plugins.custom.vimdoc-ja'))
+table.insert(M, require('user.plugins.custom.mason-tool-installer'))
 
 return M
