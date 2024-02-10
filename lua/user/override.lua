@@ -7,6 +7,7 @@ lvim.leader = "\\"
 lvim.builtin.alpha.active = false
 -- nvim-tree無効化
 lvim.builtin.nvimtree.active = false
+lvim.format_on_save.enabled = true
 
 -- lsp
 lvim.builtin.telescope.on_config_done = function()
