@@ -7,29 +7,24 @@ lvim.leader = "\\"
 lvim.builtin.alpha.active = false
 -- nvim-tree無効化
 lvim.builtin.nvimtree.active = false
+-- <C-f>とかでgit grepとかが反応してしまうため
+lvim.builtin.which_key.active = false
+
+lvim.keys.visual_mode['<'] = false
 
 -- lsp
-lvim.builtin.telescope.on_config_done = function()
-  local builtin = require("telescope.builtin")
-  vim.keymap.set("n", "<leader>ff", builtin.find_files, {})
-  vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
-  vim.keymap.set("n", "<leader>fb", builtin.buffers, {})
-  vim.keymap.set("n", "<leader>fh", builtin.help_tags, {})
-end
+local builtin = require("telescope.builtin")
+lvim.keys.normal_mode["<leader>ff"] = builtin.find_files
+lvim.keys.normal_mode["<leader>fg"] = builtin.live_grep
+lvim.keys.normal_mode["<leader>fb"] = builtin.buffers
+lvim.keys.normal_mode["<leader>fh"] = builtin.help_tags
 
-lvim.builtin.terminal.on_config_done = function()
-  function _G.set_terminal_keymaps()
-    local opts = { buffer = 0 }
-    vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], opts)
-    vim.keymap.set("t", "<C-h>", [[<Cmd>wincmd h<CR>]], opts)
-    vim.keymap.set("t", "<C-j>", [[<Cmd>wincmd j<CR>]], opts)
-    vim.keymap.set("t", "<C-k>", [[<Cmd>wincmd k<CR>]], opts)
-    vim.keymap.set("t", "<C-l>", [[<Cmd>wincmd l<CR>]], opts)
-    vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]], opts)
-    vim.keymap.set("t", "<C-p>", [[<Up>]], opts) -- ここに追加
-    vim.keymap.set("t", "<C-n>", [[<Down>]], opts) -- ここに追加
-  end
+lvim.keys.term_mode["<esc>"] = [[<C-\><C-n>]]
+lvim.keys.term_mode["<C-h>"] = [[<Cmd>wincmd h<CR>]]
+lvim.keys.term_mode["<C-j>"] = [[<Cmd>wincmd j<CR>]]
+lvim.keys.term_mode["<C-k>"] = [[<Cmd>wincmd k<CR>]]
+lvim.keys.term_mode["<C-l>"] = [[<Cmd>wincmd l<CR>]]
+lvim.keys.term_mode["<C-w>"] = [[<C-\><C-n><C-w>]]
+lvim.keys.term_mode["<C-p>"] = [[<Up>]]
+lvim.keys.term_mode["<C-n>"] = [[<Down>]]
 
-  -- if you only want these mappings for toggle term use term://*toggleterm#* instead
-  vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
-end

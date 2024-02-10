@@ -38,6 +38,7 @@
   "nvim-dap-ui": { "branch": "master", "commit": "34160a7ce6072ef332f350ae1d4a6a501daf0159" },
   "nvim-lspconfig": { "branch": "master", "commit": "fcf153fbbf1facd16a71d46b92be8be495123a9f" },
   "nvim-lua-guide-ja": { "branch": "master", "commit": "cb52e8f925771e1f972cf0abb20f34067a55586e" },
+  "nvim-mail-merge": { "branch": "main", "commit": "b8b20296ff649cb06f48f9f331a8b2df1c1a9ef5" },
   "nvim-navic": { "branch": "master", "commit": "8649f694d3e76ee10c19255dece6411c29206a54" },
   "nvim-treesitter": { "branch": "master", "commit": "1e64838ff575405c32b447b68762649289e8d73c" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "b8ff464f2afc2000f6c72fa331a8fc090cb46b39" },
@@ -61,6 +62,5 @@
   "vim-maketable": { "branch": "master", "commit": "d72e73f333c64110524197ec637897bd1464830f" },
   "vim-shakyo": { "branch": "main", "commit": "c77a978da238402d5d2994ffc19c8f68c28ce9a0" },
   "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" },
-  "vimdoc-ja": { "branch": "master", "commit": "9c4a2c27dc90ef6bdb34296be66f5cf094db988f" },
-  "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
+  "vimdoc-ja": { "branch": "master", "commit": "9c4a2c27dc90ef6bdb34296be66f5cf094db988f" }
 }
