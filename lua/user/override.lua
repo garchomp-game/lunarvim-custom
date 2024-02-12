@@ -4,7 +4,6 @@ lvim.builtin.terminal.size = 10
 lvim.builtin.bufferline.active = false
 lvim.builtin.cmp.cmdline.enable = true
 lvim.leader = "\\"
--- lvim.builtin.alpha.active = false
 -- nvim-tree無効化
 lvim.builtin.nvimtree.active = false
 -- <C-f>とかでgit grepとかが反応してしまうため
