@@ -5,7 +5,7 @@ local is_initial_setup_done = false
 -- Termux環境かどうかをチェックする関数
 function M.is_termux()
   local prefix = vim.fn.getenv("PREFIX")
-  if type(prefix) == "string" and prefix:match('/com.termux') then
+  if type(prefix) == "string" and prefix:match("/com.termux") then
     return true
   else
     return false
@@ -27,7 +27,7 @@ function M.setup_very_lazy(callbackFn)
   -- VeryLazy イベントのための autocmd を作成
   vim.api.nvim_create_autocmd("User", {
     pattern = "VeryLazy",
-    callback = callbackFn
+    callback = callbackFn,
   })
 end
 
