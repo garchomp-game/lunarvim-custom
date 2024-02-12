@@ -1,4 +1,4 @@
-lvim.lazy.opts.dev = { path = "~/workspace/pack" }
+lvim.lazy.opts.dev = { path = vim.env.DEV_PLUGIN_PATH }
 -- プラグイン追加
 lvim.plugins = require 'user.plugins'
 require 'user.override'
