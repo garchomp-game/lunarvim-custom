@@ -1,3 +1,4 @@
+lvim.leader = "\\"
 -- キーマッピング
 lvim.keys.insert_mode['<C-h>'] = '<Left>'
 lvim.keys.insert_mode['<C-j>'] = '<Down>'
@@ -5,6 +6,7 @@ lvim.keys.insert_mode['<C-k>'] = '<Up>'
 lvim.keys.insert_mode['<C-l>'] = '<Right>'
 
 lvim.keys.visual_mode['<'] = false
+lvim.keys.visual_mode['>'] = false
 
 -- lsp
 local builtin = require("telescope.builtin")
