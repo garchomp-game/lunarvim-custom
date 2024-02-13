@@ -64,5 +64,6 @@
   "vim-maketable": { "branch": "master", "commit": "d72e73f333c64110524197ec637897bd1464830f" },
   "vim-shakyo": { "branch": "main", "commit": "c77a978da238402d5d2994ffc19c8f68c28ce9a0" },
   "vim-startuptime": { "branch": "master", "commit": "454b3de856b7bd298700de33d79774ca9b9e3875" },
-  "vimdoc-ja": { "branch": "master", "commit": "9c4a2c27dc90ef6bdb34296be66f5cf094db988f" }
+  "vimdoc-ja": { "branch": "master", "commit": "9c4a2c27dc90ef6bdb34296be66f5cf094db988f" },
+  "winresizer": { "branch": "master", "commit": "9bd559a03ccec98a458e60c705547119eb5350f3" }
 }
