@@ -13,5 +13,12 @@ return {
       ':Neotree toggle<CR>',
       { noremap = true, silent = true }
     )
+    require('neo-tree').setup( {
+        window = {
+          width = 25,
+          auto_expand_width = true,
+        }
+      }
+    )
   end,
 }
