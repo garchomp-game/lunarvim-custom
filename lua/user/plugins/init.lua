@@ -23,5 +23,6 @@ table.insert(M, require("user.plugins.custom.mason-tool-installer"))
 table.insert(M, require("user.plugins.custom.nvim-mail-merge"))
 table.insert(M, require("user.plugins.custom.neoconf"))
 table.insert(M, require("user.plugins.custom.winresizer"))
+table.insert(M, require("user.plugins.custom.memolist"))
 
 return M
