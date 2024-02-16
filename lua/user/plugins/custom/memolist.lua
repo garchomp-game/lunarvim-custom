@@ -2,12 +2,12 @@ return {
   'glidenote/memolist.vim',
   event = "VeryLazy",
   dependencies = {
-    'preservim/nerdtree'
+    'kien/ctrlp.vim'
   },
   config = function()
     local memolist_path = vim.env.HOME .. '/memo'
     vim.g.memolist_path = memolist_path
-    vim.g.memolist_ex_cmd = 'NERDTree'
+    vim.g.memolist_ex_cmd = 'CtrlP'
 
     -- memoフォルダが存在するか確認
     if not vim.loop.fs_stat(memolist_path) then
