@@ -5,5 +5,5 @@ lvim.builtin.bufferline.active = false
 lvim.builtin.cmp.cmdline.enable = true
 -- nvim-tree無効化
 lvim.builtin.nvimtree.active = false
--- <C-f>とかでgit grepとかが反応してしまうため
+-- <Space>fとかでgit grepとかが反応してしまうため
 lvim.builtin.which_key.active = false
