@@ -4,6 +4,10 @@ lvim.keys.insert_mode['<C-j>'] = '<Down>'
 lvim.keys.insert_mode['<C-k>'] = '<Up>'
 lvim.keys.insert_mode['<C-l>'] = '<Right>'
 
+lvim.keys.insert_mode["<C-g>"] = function()
+  return vim.fn['codeium#Accept']()
+end
+
 lvim.keys.visual_mode['<'] = false
 lvim.keys.visual_mode['>'] = false
 
