@@ -12,3 +12,11 @@ vim.api.nvim_create_user_command(
   end,
   {}
 )
+
+vim.api.nvim_create_user_command(
+  'LspDiagnosticToQuickfix',
+  function()
+    vim.diagnostic.setqflist()
+  end,
+  {}
+)

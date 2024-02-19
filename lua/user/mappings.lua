@@ -13,10 +13,26 @@ lvim.keys.normal_mode["<leader>ff"] = builtin.find_files
 lvim.keys.normal_mode["<leader>fg"] = builtin.live_grep
 lvim.keys.normal_mode["<leader>fb"] = builtin.buffers
 lvim.keys.normal_mode["<leader>fh"] = builtin.help_tags
+
 lvim.keys.normal_mode["<leader>lo"] = "<Cmd>:lopen<CR>"
 lvim.keys.normal_mode["<leader>lc"] = "<Cmd>:lclose<CR>"
 lvim.keys.normal_mode["<leader>co"] = "<Cmd>:copen<CR>"
 lvim.keys.normal_mode["<leader>cc"] = "<Cmd>:cclose<CR>"
+
+-- LSP診断をQuickfixにロード
+lvim.keys.normal_mode["<leader>cq"] = function()
+  vim.diagnostic.setqflist()
+end
+
+-- 次のLSP診断結果へ移動
+lvim.keys.normal_mode["<leader>cn"] = function()
+  vim.diagnostic.goto_next()
+end
+
+-- 前のLSP診断結果へ移動
+lvim.keys.normal_mode["<leader>cp"] = function()
+  vim.diagnostic.goto_prev()
+end
 
 lvim.keys.term_mode["<esc>"] = [[<C-\><C-n>]]
 lvim.keys.term_mode["<C-h>"] = [[<Cmd>wincmd h<CR>]]
