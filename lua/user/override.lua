@@ -11,5 +11,5 @@ lvim.lsp.installer.setup.ensure_installed = {
   "stylelint_lsp",
 }
 
-lvim.lsp.automatic_configuration.skipped_servers = { "tsserver" }
-lvim.lsp.installer.setup.automatic_installation = false
+-- lvim.lsp.automatic_configuration.skipped_servers = { "tsserver" }
+-- lvim.lsp.installer.setup.automatic_installation = false

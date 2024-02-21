@@ -4,7 +4,6 @@ vim.o.expandtab = true
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.clipboard = "unnamedplus"
-vim.o.relativenumber = true
 vim.o.helplang='ja,en'
 vim.o.scrolloff=0
 -- markdownファイルのみタブ=スペース4個分になる現象をこれで解決できる
