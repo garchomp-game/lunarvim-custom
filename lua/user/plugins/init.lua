@@ -2,7 +2,7 @@ local M = {}
 table.insert(M, require("user.plugins.custom.actions-preview"))
 table.insert(M, require("user.plugins.custom.aerial"))
 table.insert(M, require("user.plugins.custom.codeium"))
-table.insert(M, require("user.plugins.custom.futago-vim"))
+-- table.insert(M, require("user.plugins.custom.futago-vim"))
 table.insert(M, require("user.plugins.custom.lua-guide-ja"))
 table.insert(M, require("user.plugins.custom.markdown-preview"))
 table.insert(M, require("user.plugins.custom.mini-nvim"))

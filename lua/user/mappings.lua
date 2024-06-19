@@ -30,11 +30,13 @@ end
 
 -- 次のLSP診断結果へ移動
 lvim.keys.normal_mode["<leader>cn"] = function()
+---@diagnostic disable-next-line: deprecated
   vim.diagnostic.goto_next()
 end
 
 -- 前のLSP診断結果へ移動
 lvim.keys.normal_mode["<leader>cp"] = function()
+---@diagnostic disable-next-line: deprecated
   vim.diagnostic.goto_prev()
 end
 
